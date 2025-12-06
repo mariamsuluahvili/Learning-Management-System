@@ -1,0 +1,346 @@
+header{
+    display: flex;
+    gap: 5vw;
+
+}
+header p{
+    margin-top: 4vh;
+    color: grey;
+}
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+        }
+#logodiv_id p{
+    margin-top: 2vh;
+}
+#searchimg_id{
+    height:20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#searchdiv_id p{
+    margin-top: 1.8vh;
+    margin-left: 1vw;
+    
+}
+#logodiv_id{
+     margin-top: 2vh;
+    display: flex;
+    justify-items: space-between;
+    margin-left: 35px;
+
+}
+#searchdiv_id{
+    margin-top: 2vh;
+    display: flex;
+width: 90vh;
+  height: 6.5vh;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+#logos_id{
+    display: flex;
+    gap: 1vw;
+}
+#logoimg_id{
+height: 50px;
+width:50px
+}
+#logos_id img{
+     margin-top: 3.5vh;
+     height:25px;
+    width: 25px;
+}
+#j_logo_id{
+    width: 40px;
+    height: 40px;
+    background: rgba(51, 65, 85, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 1.8vh;
+    color: white;
+}
+#j_logo_id span{
+    margin-top: 5vh;
+
+}
+.container {
+            max-width: 85vw;
+            margin: 15px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .cart-section {
+            flex: 1;
+        }
+
+        .cart-header {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .cart-count {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .tabs {
+            background-color: white;
+            padding: 0 20px;
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .tab {
+            padding: 10px 0;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab.active {
+            color: #0066ff;
+            border-bottom-color: #0066ff;
+        }
+
+        .course-item {
+            background-color: white;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .course-image {
+            width: 90px;
+            height: 60px;
+            border-radius: 4px;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .course-details {
+            flex: 1;
+        }
+
+        .course-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .course-author {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .course-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #ffa500;
+            font-size: 12px;
+        }
+
+        .rating-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .course-meta {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .course-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .course-actions a {
+            font-size: 12px;
+            color: #0066ff;
+            text-decoration: none;
+        }
+
+        .course-actions a:hover {
+            text-decoration: underline;
+        }
+
+        .course-price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .order-details {
+            width: 300px;
+        }
+
+        .order-box {
+            background-color: white;
+            padding: 18px;
+            border-radius: 6px;
+        }
+
+        .order-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .order-row.total {
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 10px;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background-color: #000;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #333;
+        }
+      footer {
+    background: #2c3e50;
+    color: white;
+    padding: 25px 0 15px;
+    margin-top: 7vh; 
+}
+
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin-left: 75vw;
+            padding: 20px 20px 0;
+            display: flex;
+            
+        }
+
+       .footer-section h3 {
+    margin-bottom: 15px;
+    display: flex;         
+    align-items: center;    
+    gap: 8px;              
+}
+
+.footer-section h3 img {   
+    width: 30px;
+    height: 30px;
+}
+
+
+        .footer-section p, .footer-section a {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 40px 0;
+        }
+
+        .page-btn {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .page-btn:hover {
+            background: #f5f5f5;
+        }
+
+        .page-btn.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
