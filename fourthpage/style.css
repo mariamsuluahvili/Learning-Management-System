@@ -81,6 +81,7 @@ width:50px
 .container {
             max-width: 85vw;
             margin: 15px auto;
+            
             padding: 0 20px;
             display: flex;
             gap: 20px;
