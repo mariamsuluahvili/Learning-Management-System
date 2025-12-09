@@ -73,51 +73,36 @@ margin-left: 69vw;
     height:20px;
     width: 20px;
 }
-#emaildiv_id label {
+#signin_form label {
   display: block;
   margin-bottom: 5px;
-}
-#passworddiv_id label {
-  display: block;
-  margin-top: 3vh;
-  margin-bottom: 5px;
+  margin-top: 2vh;
 }
 #h1_id{
     margin-top: 12vh;
     margin-left: 20vw;
 }
-#emaildiv_id input{
+#signin_form input{
     border: 1px solid rgba(226, 232, 240, 1);
   width: 52vw;
   height: 6vh;
   border-radius: 5px;
 }
 
-#passworddiv_id input{
-     border: 1px solid rgba(226, 232, 240, 1);
-  width: 52vw;
-  height: 6vh;
-  border-radius: 5px;
-}
+
 form{
     margin-left: 5vw;
 }
 #signinbutton2_id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 8vw;
     height: 6vh;
     background-color: black;
     color: white;
     border-radius: 8px;
-}
-
-#secondsignindiv_id{
-    border: 1px solid black;
-    width: 8vw;
-    height: 6vh;
-    display: flex;
-    background-color: black;
-    border-radius: 8px;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
  #divider {
             display: flex;
