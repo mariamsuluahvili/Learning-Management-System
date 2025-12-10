@@ -10,9 +10,11 @@ const validators = {
         return this.password.test(password);
     }
 };
+
 function showNotification(message, type = "info") {
     alert(`${type.toUpperCase()}: ${message}`);
 }
+
 function handleSignUp(e) {
     e.preventDefault();
 
@@ -43,14 +45,19 @@ function handleSignUp(e) {
         return;
     }
 
+    // თუ ყველაფერი სწორია — მესიჯი და გადამისამართება
     showNotification("Account created successfully!", "success");
+    window.location.href = '../ThirdPage/index.html';
 }
 
+// Navigation buttons
 document.getElementById('signin_id').addEventListener('click', function() {
     window.location.href = '../firstpage/index.html';
 });
+
 document.getElementById('signup_id').addEventListener('click', function() {
     window.location.href = '../ThirdPage/index.html';
 });
 
+// Create button → validation + redirect
 document.getElementById('createbutton_id').addEventListener('click', handleSignUp);
