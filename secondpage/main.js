@@ -1,63 +1,61 @@
 const validators = {
-    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-    password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+  email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+  password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
 
-    validateEmail(email) {
-        return this.email.test(email);
-    },
+  validateEmail(email) {
+    return this.email.test(email);
+  },
 
-    validatePassword(password) {
-        return this.password.test(password);
-    }
+  validatePassword(password) {
+    return this.password.test(password);
+  }
 };
 
 function showNotification(message, type = "info") {
-    alert(`${type.toUpperCase()}: ${message}`);
+  alert(`${type.toUpperCase()}: ${message}`);
 }
 
 function handleSignUp(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const firstName = document.getElementById('fullname_id_div').children[0].value.trim();
-    const lastName = document.getElementById('fullname_id_div').children[1].value.trim();
-    const username = document.getElementById('username_id').children[1].value.trim();
-    const email = document.getElementById('email_id').children[1].value.trim();
-    const password = document.getElementById('pass_id').children[1].value;
-    const confirmPassword = document.getElementById('confrimpass_id').children[1].value;
+  const firstName = document.querySelector('#fullname_id_div input:first-child')?.value.trim();
+  const lastName = document.querySelector('#fullname_id_div input:last-child')?.value.trim();
+  const username = document.getElementById('username_input')?.value.trim();
+  const email = document.getElementById('email_input')?.value.trim();
+  const password = document.getElementById('password_input')?.value;
+  const confirmPassword = document.getElementById('confirmpassword_input')?.value;
 
-    if (!firstName || !lastName || !username || !email || !password || !confirmPassword) {
-        showNotification("Please fill in all fields", "error");
-        return;
-    }
+  if (!firstName || !lastName || !username || !email || !password || !confirmPassword) {
+    showNotification("Please fill in all fields", "error");
+    return;
+  }
 
-    if (!validators.validateEmail(email)) {
-        showNotification("Invalid email format", "error");
-        return;
-    }
+  if (!validators.validateEmail(email)) {
+    showNotification("Invalid email format", "error");
+    return;
+  }
 
-    if (!validators.validatePassword(password)) {
-        showNotification("Password must be at least 8 characters with letters and numbers", "error");
-        return;
-    }
+  if (!validators.validatePassword(password)) {
+    showNotification("Password must be at least 8 characters with letters and numbers", "error");
+    return;
+  }
 
-    if (password !== confirmPassword) {
-        showNotification("Passwords do not match", "error");
-        return;
-    }
+  if (password !== confirmPassword) {
+    showNotification("Passwords do not match", "error");
+    return;
+  }
 
-    // თუ ყველაფერი სწორია — მესიჯი და გადამისამართება
-    showNotification("Account created successfully!", "success");
+  showNotification("Account created successfully!", "success");
+  
+  setTimeout(() => {
     window.location.href = '../ThirdPage/index.html';
+  }, 500);
 }
 
-// Navigation buttons
-document.getElementById('signin_id').addEventListener('click', function() {
-    window.location.href = '../firstpage/index.html';
+document.getElementById('signin_id')?.addEventListener('click', () => {
+  window.location.href = '../firstpage/index.html';
 });
 
-document.getElementById('signup_id').addEventListener('click', function() {
-    window.location.href = '../ThirdPage/index.html';
-});
+document.getElementById('signup_id')?.addEventListener('click', handleSignUp);
 
-// Create button → validation + redirect
-document.getElementById('createbutton_id').addEventListener('click', handleSignUp);
+document.getElementById('createbutton_id')?.addEventListener('click', handleSignUp);
